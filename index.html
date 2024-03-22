@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/pdf-lib"></script>
+    <script src="./index.js"> </script>
+
+    <style>
+        
+        form{
+            min-height: 250px;
+            margin:5% auto;
+            display:flex;
+            flex-direction: column;
+            gap:10;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .inputField{
+            min-width:200px;
+            height: 24px;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <body>  
+        <h3 style="text-align: center;">Mysa Demo</h3>
+        <form >
+            
+            <input type="text" name="Application Date" id="application_date" placeholder="Enter application Date dd/mm/yyyy" class="inputField" />
+            <input type="text" name="Tracker Id" id="tracker_id" placeholder="Enter tracker id" class="inputField"/>
+            <label>Application Type</label>
+            <div class="radioGroup">
+               <span> <input type="radio" name="application" id="yes" value="Updation"  /> <label>Updation</label></span>
+               <span> <input type="radio" name="application" id="no" value="New"  /> <label>New</label></span>
+            </div>
+            <!-- <input type="text" name="Customer_id" id="Customer_id" placeholder="Enter Customer Id" maxlength="8"/>
+            <input type="text" name="Account Number" id="account_no" placeholder="Enter Account number"/> -->
+            <button type="button" name="submit"  id="submit_btn">Generate PDF</button>
+        </form>
+
+       <!--  <iframe id="pdf" style="width: 100%; height: 100%;"></iframe> -->
+      </body>
+
+      <script>
+       
+      </script>
+</body>
+</html>
